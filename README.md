@@ -1,6 +1,10 @@
 ## [English Document](README_en.md)
 
 
+**iOS Android Flutter 自定义画中画!**
+
+![flutter画中画](flutter画中画.PNG)
+
 
 **基于 iOS 14 的 `AVPictureInPictureController` 实现自定义画中画，已覆盖市面上所有画中画的核心和难点：**
 
