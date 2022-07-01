@@ -1,6 +1,9 @@
 ## [English Document](README_en.md)
 
 
+**源码已开源！！！**
+
+
 **iOS Android Flutter 自定义画中画!**
 
 ![flutter画中画](flutter画中画.PNG)
@@ -52,16 +55,9 @@ demo展示：
 
 
 
-### 需要 demo 请添加微信号 cq1351675135 或者扫码：
+### 技术交流请添加微信号 cq1351675135 或者扫码：
 
 ![](wechat.png)
 
 
-童叟无欺！
-
-老少皆宜！
-
-价格良心！
-
-非诚勿扰！
 
