@@ -1,0 +1,23 @@
+PODS:
+  - Flutter (1.0.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 050d263083e0e13d5d0b356dd61a8794d3f09355
+
+COCOAPODS: 1.11.2
