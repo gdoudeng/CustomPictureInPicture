@@ -22,7 +22,7 @@
 ---
 
 
-> **此仓库花费了我大量的时间和精力，若对你有用，请 star 支持！⭐️ 后续会更新更多功能！**
+> **若有用，给个 star，后续会更新更多功能！**
 
 
 ---
@@ -46,15 +46,52 @@
 
 ### 4. 如何用代码旋转窗口？
 
+详细见demo源码。
 
 
 ### 5. 如何在录视频时不暗屏？
+
+详细见demo源码。
+
+
 ### 6. 如何让画中画在后台一直运行？
 
 播放无声音频。
 
-### 7. 如何应对苹果的审核？
 
+### 7. 如何进入后台时自动开启画中画？
+
+`AVPictuerInPictureController` 提供了一个属性：
+
+
+```swift
+if #available(iOS 14.2, *) {
+	pipController.canStartPictureInPictureAutomaticallyFromInline = true
+} else {
+	// Fallback on earlier versions
+}
+```
+
+注：播放器必须处于播放状态。
+
+
+### 8. 如何监听画中画窗口变大变小？
+
+KVO。
+
+监听画中画里view大小的变化。
+
+
+### 9. 如何在画中画开启时，让 app 自动进入后台？
+
+调用下面方法：
+
+```swift
+UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+```
+
+
+### 最后，如何应对苹果的审核？
 
 苹果可能会因为你使用了后台权限而拒绝你，这个时候你可以在APP里添加一个系统播放器，就播放画中画的使用教程，有了系统播放器，你就可以理所当然的使用画中画了。
 
