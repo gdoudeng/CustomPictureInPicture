@@ -59,7 +59,6 @@
 
 - (void)handleEnterBackground {
     NSLog(@"进入后台");
-    [self beginDownload];
 }
 
 // 配置画中画
@@ -239,52 +238,6 @@
 
 - (void)pictureInPictureControllerDidStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
     [self stopDisplayLink];
-}
-
-/**
- 后台传输
- */
-- (NSURLSession *)backgroundSession
-{
-    //Use dispatch_once_t to create only one background session. If you want more than one session, do with different identifier
-    static NSURLSession *session = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        //        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.yourcompany.appId.BackgroundSession"];
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"com.yourcompany.appId.BackgroundSession"];
-        
-        session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
-    });
-    return session;
-}
-- (void) beginDownload
-{
-    NSLog(@"开始下载");
-    NSURL *downloadURL = [NSURL URLWithString:@"downloadsString"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:downloadURL];
-    self.session = [self backgroundSession];
-    self.downloadTask = [self.session downloadTaskWithRequest:request];
-    [self.downloadTask resume];
-}
-
--(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler{
-    completionHandler();
-    NSLog(@"检测到后台传输数据");
-}
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
-didFinishDownloadingToURL:(NSURL *)location{
-    NSLog(@"完成下载");
-}
-- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
-didCompleteWithError:(NSError *)error{
-    NSLog(@"下载错误");
-    //    if (temp==1) {//进入前台置为0就可以了
-    //        [self beginDownload];
-    //    }
-    //
-    
-    [self beginDownload];
-    
 }
 
 @end
