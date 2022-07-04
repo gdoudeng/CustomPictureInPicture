@@ -11,11 +11,17 @@
 
 真机 & iOS14及以上
 
-
 **demo展示：**
 
-![demo](demo.gif)
 
+1. 悬浮提词器：
+
+![pip](pip.gif)
+
+
+2. 悬浮秒表：
+
+![FloatTimer](悬浮秒表.PNG)
 
 ---
 
