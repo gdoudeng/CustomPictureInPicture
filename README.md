@@ -50,12 +50,12 @@
 
 ### 4. 如何用代码旋转窗口？
 
-详细见demo源码。
+详见demo源码。
 
 
 ### 5. 如何在录视频时不暗屏？
 
-详细见demo源码。
+详见demo源码。
 
 
 ### 6. 如何让画中画在后台一直运行？
@@ -70,9 +70,9 @@
 
 ```swift
 if #available(iOS 14.2, *) {
-	pipController.canStartPictureInPictureAutomaticallyFromInline = true
+    pipController.canStartPictureInPictureAutomaticallyFromInline = true
 } else {
-	// Fallback on earlier versions
+    // Fallback on earlier versions
 }
 ```
 
@@ -91,6 +91,10 @@ KVO，监听画中画里view大小的变化；或者直接在 `layoutSubviews` �
 ```swift
 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
 ```
+
+### 10. 如何提升悬浮秒表的精度？
+
+使用 GCD Timer。
 
 
 ### 最后，如何应对苹果的审核？
