@@ -1,23 +1,21 @@
-[English Document](README_en.md)
+**[English Document](README_en.md)**
 
+---
 
 基于 iOS 14 的 `AVPictureInPictureController`，完全自定义画中画，已覆盖市面上所有画中画的核心和难点。
 
+**iOS Android Flutter 全部平台，全部代码，全部开源！！！**
 
-**全部开源！！！**
 
-**iOS Android Flutter 所有源码 ！！！**
+**运行环境：**
 
+真机 & iOS14及以上
 
 
 **demo展示：**
 
 ![demo](demo.gif)
 
-
-**运行环境：**
-
-真机 & iOS14或以上
 
 ---
 
