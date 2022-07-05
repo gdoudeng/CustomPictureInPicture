@@ -16,7 +16,7 @@
 
 1. 悬浮提词器：
 
-![Teleprompter](悬浮提词器.gif)
+![Teleprompter](悬浮提词器.GIF)
 
 
 2. 悬浮秒表：
