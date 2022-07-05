@@ -1,4 +1,4 @@
-**[English Document](README_en.md)**
+**[English Document](README_EN.md)**
 
 ---
 
@@ -16,7 +16,7 @@
 
 1. 悬浮提词器：
 
-![pip](pip.gif)
+![Teleprompter](悬浮提词器.gif)
 
 
 2. 悬浮秒表：
@@ -92,7 +92,13 @@ KVO，监听画中画里view大小的变化；或者直接在 `layoutSubviews` �
 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
 ```
 
-### 10. 如何提升悬浮秒表的精度？
+
+### 10. 如何让滚动更加丝滑？
+
+使用 `CADisplayLink`。
+
+
+### 11. 如何提升悬浮秒表的精度？
 
 使用 GCD Timer。
 
