@@ -1,4 +1,4 @@
-**[English Document](README_EN.md)**
+**[English Document](README_en.md)**
 
 ---
 
@@ -6,24 +6,28 @@
 
 **iOS Android Flutter 全部平台，全部代码，全部开源！！！**
 
-> **更多功能持续更新中，欢迎star！**
 
+**运行环境：**
 
-**iOS demo 运行环境：**
+真机 & iOS14及以上
 
-真机 & iOS14或以上
+**demo展示：**
 
-
-**demo 展示：**
 
 1. 悬浮提词器：
 
-![Teleprompter](悬浮提词器.GIF)
+![pip](pip.gif)
 
 
 2. 悬浮秒表：
 
 ![FloatTimer](悬浮秒表.PNG)
+
+---
+
+
+> **若有用，给个 star，后续会更新更多功能！**
+
 
 ---
 
@@ -40,19 +44,11 @@
 
 `AVPictureInPictureController` 提供的接口就那几个，你尝试了所有接口都实现不了。这个时候就可以断定，这个功能是通过私有 api 来实现的了。
 
-那么如何找到那个私有api？两种方法：
+### 3. 如何用代码动态修改窗口的形状？
 
-1. 使用 `Runtime` 的 api 打印出所有私有属性；
-2. 使用工具： https://developer.limneos.net/index.php?ios=14.4&framework=AVKit.framework&header=AVPictureInPictureController.h
+窗口的形状由视频的形状决定。
 
-有了私有属性列表，后面就自行尝试了。
-
-
-### 3. 如何用代码动态修改悬浮窗口的形状？
-
-窗口的形状由视频的形状决定，修改视频源就可以修改窗口形状。
-
-### 4. 如何用代码旋转悬浮窗口？
+### 4. 如何用代码旋转窗口？
 
 详见demo源码。
 
@@ -80,7 +76,7 @@ if #available(iOS 14.2, *) {
 }
 ```
 
-**注：画中画的 player 必须处于播放状态。**
+注：播放器必须处于播放状态。
 
 
 ### 8. 如何监听画中画窗口变大变小？
@@ -96,13 +92,7 @@ KVO，监听画中画里view大小的变化；或者直接在 `layoutSubviews` �
 UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
 ```
 
-
-### 10. 如何让滚动更加丝滑？
-
-使用 `CADisplayLink`。
-
-
-### 11. 如何提升悬浮秒表的精度？
+### 10. 如何提升悬浮秒表的精度？
 
 使用 GCD Timer。
 
@@ -125,9 +115,12 @@ UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shar
 ### 引申出的骚操作 - 如何给让 App 可以一直在后台运行？
 
 问：如何让你开发的 App 可以一直在后台运行？
+
 答：后台放无声音频就阔以咯。
 
+
 问：后台放无声音频需要 Background Mode，审核阔能不通过。
+
 答：给你的 App 一个可以正当使用 Background Mode 的理由，比如说视频播放，比如说画中画。
 
 
