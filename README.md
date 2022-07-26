@@ -112,15 +112,13 @@ UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shar
 视频播放器放什么？实在不知道放什么就放你们产品的画中画使用教程吧。
 
 
-### 引申出的骚操作 - 如何给让 App 可以一直在后台运行？
+### 引申出的骚操作：如何给让 App 可以一直在后台运行？
 
-问：如何让你开发的 App 可以一直在后台运行？
+- 问：如何让你开发的 App 可以一直在后台运行？
+- 答：后台放无声音频就阔以咯。
 
-答：后台放无声音频就阔以咯。
 
-
-问：后台放无声音频需要 Background Mode，审核阔能不通过。
-
-答：给你的 App 一个可以正当使用 Background Mode 的理由，比如说视频播放，比如说画中画。
+- 问：后台放无声音频需要 Background Mode，审核阔能不通过。
+- 答：给你的 App 一个可以正当使用 Background Mode 的理由，比如说视频播放，比如说画中画。
 
 
