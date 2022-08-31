@@ -32,8 +32,7 @@ class ViewController: UIViewController, AVPictureInPictureControllerDelegate {
         
         if AVPictureInPictureController.isPictureInPictureSupported() {
             do {
-                try AVAudioSession.sharedInstance().setCategory(.playback)
-                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                try AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
             } catch {
                 print(error)
             }
