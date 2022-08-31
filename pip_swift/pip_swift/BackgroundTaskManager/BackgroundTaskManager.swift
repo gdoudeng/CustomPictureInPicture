@@ -23,7 +23,7 @@ class BackgroundTaskManager: NSObject {
     
     var audioPlayer: AVAudioPlayer!
     
-    override init() {
+    private override init() {
         super.init()
         
         do {
