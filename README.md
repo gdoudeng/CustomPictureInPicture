@@ -16,12 +16,12 @@
 
 1. 悬浮提词器：
 
-![pip](pip.gif)
+![float_teleprompter](float_teleprompter.GIF)
 
 
 2. 悬浮秒表：
 
-![FloatTimer](悬浮秒表.PNG)
+![float_timer](float_timer.PNG)
 
 ---
 
