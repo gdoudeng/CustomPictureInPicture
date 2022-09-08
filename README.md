@@ -38,11 +38,26 @@
 
 ### 1. 如何添加自定义 view 到画中画窗口？
 
-你如果在画中画弹出前后将所有 window 打印出来，你就会发现，当画中画弹出后，多了一个 window，而这个 window 就是你添加自定义 view 的 window。
+
+```swift
+func pictureInPictureControllerWillStartPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
+    // note this is first window
+    if let window = UIApplication.shared.windows.first {
+        window.addSubview(customView)
+        // use autoLayout
+        customView.snp.makeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
+        }
+    }
+}
+```
 
 ### 2. 如何隐藏系统的快进快退按钮、播放按钮、进度条？
 
-`AVPictureInPictureController` 提供的接口就那几个，你尝试了所有接口都实现不了。这个时候就可以断定，这个功能是通过私有 api 来实现的了。
+
+```swift
+pipController.setValue(1, forKey: "controlsStyle")
+```
 
 ### 3. 如何用代码动态修改窗口的形状？
 
