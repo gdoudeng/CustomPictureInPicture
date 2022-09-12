@@ -1,6 +1,7 @@
-基于 iOS 14 的 `AVPictureInPictureController`，完全自定义画中画，已覆盖市面上所有画中画的核心和难点。
+>全方位自定义画中画，移动端全平台[iOS Android Flutter]支持。悬浮提词器，Teleprompter，悬浮时钟，秒杀神器，记牌器，抢茅台，抢球鞋，隐藏系统按钮，添加自定义view，改变形状，旋转，拍照录屏正常运行，高精度timer，审核一次过。
 
-**iOS Android Flutter 全部平台，全部代码，全部开源！！！**
+
+基于 iOS 14 的 `AVPictureInPictureController`，完全自定义画中画，已覆盖市面上所有画中画的核心和难点。
 
 
 **运行环境：**
@@ -18,11 +19,6 @@
 2. 悬浮秒表：
 
 ![float_timer](float_timer.PNG)
-
----
-
-
-> **若有用，给个 star，后续会更新更多功能！**
 
 
 ---

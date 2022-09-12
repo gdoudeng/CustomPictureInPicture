@@ -1,5 +1,6 @@
 [中文文档](README_cn.md)
 
+
 # Features:
 
 1. You can add any custom view on the pip window;
@@ -12,12 +13,20 @@
 8. The timer's accuracy is millisecond;
 9. The solution for your app rejected by Apple.
 
+
 # Demos:
 
-## 1.float_teleprompter
+## 1. float_teleprompter
 
 ![float_teleprompter](float_teleprompter.GIF)
 
-## 2.float_timer
+## 2. float_timer
 
 ![float_timer](float_timer.PNG)
+
+
+# Contact
+
+For more technical exchange you can add my WeChat: *cq1351675135* or scan:
+
+![WeChat](WeChat.PNG)
