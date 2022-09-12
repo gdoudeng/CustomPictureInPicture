@@ -29,4 +29,4 @@
 
 For more technical exchange you can add my WeChat: *cq1351675135* or scan:
 
-![WeChat](WeChat.PNG)
+![contact](contact.PNG)
