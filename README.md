@@ -25,7 +25,7 @@
 ![float_timer](float_timer.PNG)
 
 
-# Contact
+# Contact:
 
 For more technical exchange you can add my WeChat: *cq1351675135* or scan:
 
