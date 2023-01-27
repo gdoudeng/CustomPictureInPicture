@@ -19,6 +19,7 @@
 		D950ECFB265E30D1006DD1A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D950ECFA265E30D1006DD1A6 /* main.m */; };
 		D95D3E3827A2AEBA001C1B6E /* slience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D95D3E3727A2AEBA001C1B6E /* slience.mp3 */; };
 		D970E339265E9FE700302A8C /* 横向视频.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = D970E338265E9FE700302A8C /* 横向视频.MP4 */; };
+		D9F4A6DF28BF0DE600594E10 /* BackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F4A6DC28BF0DE600594E10 /* BackgroundTaskManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		D950ECFA265E30D1006DD1A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D95D3E3727A2AEBA001C1B6E /* slience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = slience.mp3; sourceTree = "<group>"; };
 		D970E338265E9FE700302A8C /* 横向视频.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "横向视频.MP4"; sourceTree = "<group>"; };
+		D9F4A6DC28BF0DE600594E10 /* BackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTaskManager.m; sourceTree = "<group>"; };
+		D9F4A6DD28BF0DE600594E10 /* BackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTaskManager.h; sourceTree = "<group>"; };
 		FADB425D76B8CB712766D7B4 /* Pods-pip_oc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pip_oc.release.xcconfig"; path = "Target Support Files/Pods-pip_oc/Pods-pip_oc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +96,7 @@
 		D950ECE7265E30D0006DD1A6 /* pip_oc */ = {
 			isa = PBXGroup;
 			children = (
-				D95D3E3727A2AEBA001C1B6E /* slience.mp3 */,
+				D9F4A6DB28BF0DE600594E10 /* BackgroundTaskManager */,
 				D950ECE8265E30D0006DD1A6 /* AppDelegate.h */,
 				D950ECE9265E30D0006DD1A6 /* AppDelegate.m */,
 				D950ECEB265E30D0006DD1A6 /* SceneDelegate.h */,
@@ -110,6 +113,16 @@
 				D950ECFA265E30D1006DD1A6 /* main.m */,
 			);
 			path = pip_oc;
+			sourceTree = "<group>";
+		};
+		D9F4A6DB28BF0DE600594E10 /* BackgroundTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				D9F4A6DD28BF0DE600594E10 /* BackgroundTaskManager.h */,
+				D9F4A6DC28BF0DE600594E10 /* BackgroundTaskManager.m */,
+				D95D3E3727A2AEBA001C1B6E /* slience.mp3 */,
+			);
+			path = BackgroundTaskManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F4A6DF28BF0DE600594E10 /* BackgroundTaskManager.m in Sources */,
 				D950ECF0265E30D0006DD1A6 /* ViewController.m in Sources */,
 				D950ECEA265E30D0006DD1A6 /* AppDelegate.m in Sources */,
 				D950ECFB265E30D1006DD1A6 /* main.m in Sources */,
@@ -365,7 +379,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pip.pip-oc.cqcq2";
+				PRODUCT_BUNDLE_IDENTIFIER = "pip.pip-oc.cq";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,7 +398,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pip.pip-oc.cqcq2";
+				PRODUCT_BUNDLE_IDENTIFIER = "pip.pip-oc.cq";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

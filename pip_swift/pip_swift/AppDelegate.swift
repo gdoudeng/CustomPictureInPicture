@@ -10,25 +10,9 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var bgTask: UIBackgroundTaskIdentifier!
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
-    }
-    
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        let app = UIApplication.shared
-        bgTask = app.beginBackgroundTask(expirationHandler: { [weak self] in
-            if let strongSelf = self {
-                app.endBackgroundTask(strongSelf.bgTask)
-                strongSelf.bgTask = UIBackgroundTaskIdentifier.invalid
-            }
-        })
-        DispatchQueue.global().async {
-            app.endBackgroundTask(self.bgTask)
-            self.bgTask = UIBackgroundTaskIdentifier.invalid
-        }
     }
     
     // MARK: UISceneSession Lifecycle

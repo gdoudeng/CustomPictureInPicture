@@ -11,9 +11,7 @@
 
 @end
 
-@implementation AppDelegate {
-    UIBackgroundTaskIdentifier *bgTask;
-}
+@implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -21,28 +19,15 @@
     return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    UIApplication*    app = [UIApplication sharedApplication];
-
-        bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
-            [app endBackgroundTask:bgTask];
-            bgTask = UIBackgroundTaskInvalid;
-        }];
-
-        // Start the long-running task and return immediately.
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-
-            // Do the work associated with the task.
-            //[self startTimerAction];
-            [app endBackgroundTask:bgTask];
-            bgTask = UIBackgroundTaskInvalid;
-        });
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    NSLog(@"applicationDidBecomeActive");
 }
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSLog(@"applicationDidEnterBackground");
+}
 
 #pragma mark - UISceneSession lifecycle
-
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.
@@ -56,6 +41,8 @@
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
+
+
 
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		68FE9A1F302F1B3ECE88FA4F /* Pods_pip_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8853957D05B22C22DA37BB8 /* Pods_pip_swift.framework */; };
 		D91ED412267C75AE0064D2EB /* 方形视频.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = D91ED411267C75AE0064D2EB /* 方形视频.MP4 */; };
+		D93F3C1328BF36E600BB696D /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F3C1228BF36E600BB696D /* BackgroundTaskManager.swift */; };
 		D950ED0F265E319D006DD1A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950ED0E265E319D006DD1A6 /* AppDelegate.swift */; };
 		D950ED11265E319D006DD1A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950ED10265E319D006DD1A6 /* SceneDelegate.swift */; };
 		D950ED13265E319D006DD1A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950ED12265E319D006DD1A6 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		6F54F6C5FA5D84ABA948B4A5 /* Pods-pip_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pip_swift.release.xcconfig"; path = "Target Support Files/Pods-pip_swift/Pods-pip_swift.release.xcconfig"; sourceTree = "<group>"; };
 		D8853957D05B22C22DA37BB8 /* Pods_pip_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pip_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91ED411267C75AE0064D2EB /* 方形视频.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方形视频.MP4"; sourceTree = "<group>"; };
+		D93F3C1228BF36E600BB696D /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskManager.swift; sourceTree = "<group>"; };
 		D950ED0B265E319D006DD1A6 /* pip_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pip_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D950ED0E265E319D006DD1A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D950ED10265E319D006DD1A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D93F3C1128BF34B800BB696D /* BackgroundTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				D93F3C1228BF36E600BB696D /* BackgroundTaskManager.swift */,
+				D95D3E3927A2AF26001C1B6E /* slience.mp3 */,
+			);
+			path = BackgroundTaskManager;
+			sourceTree = "<group>";
+		};
 		D950ED02265E319D006DD1A6 = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +99,8 @@
 		D950ED0D265E319D006DD1A6 /* pip_swift */ = {
 			isa = PBXGroup;
 			children = (
+				D93F3C1128BF34B800BB696D /* BackgroundTaskManager */,
 				D950ED12265E319D006DD1A6 /* ViewController.swift */,
-				D95D3E3927A2AF26001C1B6E /* slience.mp3 */,
 				D91ED411267C75AE0064D2EB /* 方形视频.MP4 */,
 				D970E332265E9FC600302A8C /* 横向视频.MP4 */,
 				D958DC7726660ECF00A72542 /* 竖向视频.MP4 */,
@@ -221,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F3C1328BF36E600BB696D /* BackgroundTaskManager.swift in Sources */,
 				D950ED13265E319D006DD1A6 /* ViewController.swift in Sources */,
 				D950ED0F265E319D006DD1A6 /* AppDelegate.swift in Sources */,
 				D950ED11265E319D006DD1A6 /* SceneDelegate.swift in Sources */,
